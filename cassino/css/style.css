@@ -247,19 +247,6 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Marcador externo */
-#marker {
-    position: relative;
-    margin: 20px auto;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 50%;
-    border: 2px solid #444;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-}
-
-/* Roleta */
 #roulette-wheel {
     position: relative;
     width: 200px;
@@ -268,16 +255,26 @@ main {
     border: 5px solid #444;
     border-radius: 50%;
     background: conic-gradient(
-        #ff5733 0% 25%,   /* Vermelho */
-        #33ff57 25% 50%,  /* Verde */
-        #3357ff 50% 75%,  /* Azul */
-        #f3ff33 75% 100%  /* Amarelo */
+        #ff5733 0% 25%,
+        #33ff57 25% 50%,
+        #3357ff 50% 75%,
+        #f3ff33 75% 100%
     );
     overflow: hidden;
-    transition: transform 3s ease-out; /* Animação suave */
 }
 
-/* Botão de girar */
+#spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
 #spin-button {
     width: 100%;
     padding: 12px;
@@ -295,7 +292,6 @@ main {
     background-color: #5a7de2; /* Escurece a cor no hover */
 }
 
-/* Resultado */
 #result {
     margin-top: 20px;
     font-size: 18px;
@@ -323,4 +319,43 @@ footer {
     #roulette-container {
         padding: 15px;
     }
+}
+/* Estilo do formulário de aposta */
+#bet-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#bet-form label {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-right: 10px;
+}
+
+#bet-form select,
+#bet-form input {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #e0e0e0;
+    font-size: 14px;
+}
+
+#bet-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #6e8efb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#bet-form button:hover {
+    background-color: #5a7de2;
 }
