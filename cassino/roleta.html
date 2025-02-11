@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleta - Cassino Zuge Enterprise</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Roleta</h1>
+        <div id="user-info">
+            <span id="username">Visitante</span> | Saldo: R$<span id="balance">100</span>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <div id="roulette-container">
+            <h2>Gire a Roleta!</h2>
+
+            <!-- Marcador Externo -->
+            <div id="marker"></div>
+
+            <!-- Roleta -->
+            <div id="roulette-wheel">
+                <div id="spinner"></div>
+            </div>
+
+            <!-- Formulário de Aposta -->
+            <div id="bet-form">
+                <label for="bet-color">Escolha uma cor:</label>
+                <select id="bet-color">
+                    <option value="vermelho">Vermelho</option>
+                    <option value="verde">Verde</option>
+                    <option value="azul">Azul</option>
+                    <option value="amarelo">Amarelo</option>
+                </select>
+
+                <label for="bet-amount">Valor da aposta:</label>
+                <input type="number" id="bet-amount" min="1" placeholder="Valor">
+
+                <button id="spin-button">Girar</button>
+            </div>
+
+            <p id="result"></p>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2023 Cassino Zuge Enterprise. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/roleta.js"></script>
+</body>
+</html>

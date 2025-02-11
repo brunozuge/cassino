@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassino Zuge Enterprise</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Cassino Zuge Enterprise</h1>
+        <div id="user-info">
+            <span id="username">Visitante</span> | Saldo: $<span id="balance">0</span>
+            <button onclick="window.location.href='login.html'">Login</button>
+            <button onclick="window.location.href='register.html'">Registrar</button>
+        </div>
+    </header>
+
+    <!-- Lobby de Jogos -->
+    <main>
+        <section id="lobby">
+            <h2>Lobby de Jogos</h2>
+            <div class="game-card" onclick="window.location.href='roleta.html'">
+                <h3>Roleta</h3>
+                <p>Gire a roleta e ganhe prêmios!</p>
+            </div>
+            <div class="game-card" onclick="window.location.href='cartas.html'">
+                <h3>Jogo de Cartas</h3>
+                <p>Tente a sorte com cartas!</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2023 Cassino Zuge Enterprise. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

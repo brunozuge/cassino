@@ -1,0 +1,326 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1e1e1e; /* Cinza escuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#user-info span {
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+#user-info button {
+    padding: 8px 12px;
+    background-color: #333; /* Botão escuro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#user-info button:hover {
+    background-color: #555; /* Escurece o botão no hover */
+}
+
+/* Main (conteúdo principal) */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #1e1e1e, #333); /* Gradiente escuro */
+}
+
+.game-card {
+    background-color: #2c2c2c; /* Fundo escuro para os cards */
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.game-card h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.game-card p {
+    color: #e0e0e0;
+}
+
+/* Formulários de Registro e Login */
+#register-form,
+#login-form {
+    background: #2c2c2c; /* Fundo escuro */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+#register-form h3,
+#login-form h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#register-form input,
+#login-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333; /* Input escuro */
+    color: #e0e0e0; /* Texto claro nos inputs */
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+#register-form input:focus,
+#login-form input:focus {
+    border-color: #6e8efb; /* Destaca o campo ao focar */
+    outline: none;
+}
+
+#register-form button,
+#login-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #6e8efb; /* Cor primária para botões */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#register-form button:hover,
+#login-form button:hover {
+    background-color: #5a7de2; /* Escurece a cor no hover */
+}
+
+#register-form button:last-child,
+#login-form button:last-child {
+    background-color: #333; /* Botão "Voltar ao Lobby" */
+    margin-top: 10px;
+}
+
+#register-form button:last-child:hover,
+#login-form button:last-child:hover {
+    background-color: #555; /* Escurece o botão "Voltar ao Lobby" */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1e1e1e; /* Cinza escuro */
+    color: white;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    #register-form,
+    #login-form {
+        padding: 20px;
+    }
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1e1e1e; /* Cinza escuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#user-info span {
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+/* Main (conteúdo principal) */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #1e1e1e, #333); /* Gradiente escuro */
+}
+
+#roulette-container {
+    background-color: #2c2c2c; /* Fundo escuro */
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Marcador externo */
+#marker {
+    position: relative;
+    margin: 20px auto;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Roleta */
+#roulette-wheel {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border: 5px solid #444;
+    border-radius: 50%;
+    background: conic-gradient(
+        #ff5733 0% 25%,   /* Vermelho */
+        #33ff57 25% 50%,  /* Verde */
+        #3357ff 50% 75%,  /* Azul */
+        #f3ff33 75% 100%  /* Amarelo */
+    );
+    overflow: hidden;
+    transition: transform 3s ease-out; /* Animação suave */
+}
+
+/* Botão de girar */
+#spin-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #6e8efb; /* Cor primária */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#spin-button:hover {
+    background-color: #5a7de2; /* Escurece a cor no hover */
+}
+
+/* Resultado */
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #e0e0e0;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1e1e1e; /* Cinza escuro */
+    color: white;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    #roulette-container {
+        padding: 15px;
+    }
+}
